@@ -11,7 +11,7 @@ print("\n-----number 3-----")
 print(5 ** 2 ** 2)
 
 print("\n-----number 4-----")
-# Right side binding
+# Left side binding
 print(100+30-50)
 
 print("\n-----number 5-----")
