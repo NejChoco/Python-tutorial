@@ -38,6 +38,7 @@ def check_budget(total_cost, predefined_budget):
     else:
         return "Budget Exactly Matched"
 
+
 while True:
     try:
         print("\nBUDGET PLAN\n")
@@ -49,6 +50,10 @@ while True:
         decoration = float(input("decoration: "))
         entertainment=float(input("entertainment: "))
         miscellaneous=float(input("miscellaneous: "))
+        
+        
+        total_cost = calculate_total_cost(venue, catering, decoration, entertainment, miscellaneous) 
+        
         print("====================================================")
         print(f"Predefined Budget: {predefined_budget} \nTotal Cost: {total_cost}")
         print(f"Budget Verdict: {check_budget(total_cost, predefined_budget)}")
