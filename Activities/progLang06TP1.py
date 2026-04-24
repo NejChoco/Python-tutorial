@@ -36,7 +36,7 @@ while True:
         total_cost = calculate_total_cost(venue, catering, decoration, entertainment, miscellaneous)
 
         print("====================================================")
-        print(f"Predefined Budget: {predefined_budget} \nTotal Cost: {total_cost}")
+        print(f"Predefined Budget: {predefined_budget:,.2f} \nTotal Cost: {total_cost:,.2f}")
         print(f"Budget Verdict: {check_budget(total_cost, predefined_budget)}")
     except ValueError as e:
         print(f"Invalid input: {e}. Please enter positive numerical numbers only.")
